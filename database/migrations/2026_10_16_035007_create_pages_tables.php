@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('pages', function (Blueprint $table) {
             createDefaultTableFields($table);
             $table->string('template', 50)->default('default');
-            $table->string('key', 50)->nullable()->unique();
+            $table->string('key', 191)->nullable()->unique();
         });
 
         Schema::create('page_translations', function (Blueprint $table) {

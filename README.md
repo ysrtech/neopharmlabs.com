@@ -33,13 +33,7 @@ php artisan serve
 
 ## Deploying to the server
 
-1. Point the web root to `public/`, PHP 8.2+ with `gd` or `imagick`, `pdo_mysql`, `intl`.
-2. `composer install --no-dev --optimize-autoloader`
-3. Configure `.env` (`APP_ENV=production`, `APP_DEBUG=false`, `APP_URL=https://www.neopharmlabs.com`, database, mail, `FORMS_NOTIFY_*`).
-4. `php artisan key:generate && php artisan migrate --force && php artisan storage:link`
-5. `php artisan neopharm:import` (first deploy only; `--fresh` wipes and re-imports CMS content).
-6. `php artisan twill:superadmin …`, then `php artisan config:cache route:cache view:cache`.
-7. Make `storage/` and `bootstrap/cache/` writable by the web server.
+See [DEPLOY.md](DEPLOY.md) for the step-by-step server install (Ubuntu, Nginx, PHP-FPM, MySQL, SSL, mail, backups).
 
 Images are resized on the fly by Glide (`/img/...`). Uploaded images live in `storage/app/public/uploads`.
 

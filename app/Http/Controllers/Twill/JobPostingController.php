@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Twill;
 
 use A17\Twill\Http\Controllers\Admin\ModuleController as BaseModuleController;
+use App\Http\Controllers\Twill\Concerns\LocalizedPermalinks;
 use A17\Twill\Models\Contracts\TwillModelContract;
 use A17\Twill\Services\Forms\Fields\DatePicker;
 use A17\Twill\Services\Forms\Fields\Input;
@@ -13,11 +14,13 @@ use A17\Twill\Services\Listings\TableColumns;
 
 class JobPostingController extends BaseModuleController
 {
+    use LocalizedPermalinks;
+
     protected $moduleName = 'jobPostings';
 
     protected function setUpController(): void
     {
-        $this->setPermalinkBase('careers/jobs');
+        $this->useLocalizedPermalinks('jobs');
     }
 
     public function getForm(TwillModelContract $model): Form

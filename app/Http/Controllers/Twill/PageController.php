@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Twill;
 
 use A17\Twill\Http\Controllers\Admin\ModuleController as BaseModuleController;
+use App\Http\Controllers\Twill\Concerns\LocalizedPermalinks;
 use A17\Twill\Models\Contracts\TwillModelContract;
 use A17\Twill\Services\Forms\Fields\BlockEditor;
 use A17\Twill\Services\Forms\Fields\Input;
@@ -17,12 +18,13 @@ use App\Models\Page;
 
 class PageController extends BaseModuleController
 {
+    use LocalizedPermalinks;
+
     protected $moduleName = 'pages';
 
     protected function setUpController(): void
     {
-        $this->setPermalinkBase('');
-        $this->withoutLanguageInPermalink(false);
+        $this->useLocalizedPermalinks(null);
     }
 
     public function getForm(TwillModelContract $model): Form

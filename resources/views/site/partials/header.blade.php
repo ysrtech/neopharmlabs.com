@@ -1,5 +1,5 @@
 @php($alternates = $alternates ?? [])
-<header class="page-header-container {{ $headerClass ?? 'is-white' }}">
+<header class="page-header-container {{ $headerClass ?? '' }}">
     <div class="nav-top-row">
         <div class="wrap">
             <div class="nav-top-row-inner">

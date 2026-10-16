@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Twill;
 
 use A17\Twill\Http\Controllers\Admin\ModuleController as BaseModuleController;
+use App\Http\Controllers\Twill\Concerns\LocalizedPermalinks;
 use A17\Twill\Models\Contracts\TwillModelContract;
 use A17\Twill\Services\Forms\Fields\BlockEditor;
 use A17\Twill\Services\Forms\Fields\DatePicker;
@@ -20,11 +21,13 @@ use App\Models\PostCategory;
 
 class PostController extends BaseModuleController
 {
+    use LocalizedPermalinks;
+
     protected $moduleName = 'posts';
 
     protected function setUpController(): void
     {
-        $this->setPermalinkBase('blog');
+        $this->useLocalizedPermalinks('blog');
     }
 
     public function getForm(TwillModelContract $model): Form

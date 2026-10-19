@@ -1,0 +1,46 @@
+/* Styles added for the rebuilt site: forms (the original used Craft Formie's own stylesheet) and small helpers. */
+.fui-hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+
+.fui-form { width: 100%; margin-top: 1.5rem; }
+.fui-row { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
+.fui-row > .fui-field { flex: 1 1 220px; min-width: 0; }
+.fui-field { margin-bottom: 1.1rem; }
+.fui-label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.4rem; color: #122029; }
+.fui-required { color: #e53e3e; }
+.fui-input, .fui-select {
+    display: block; width: 100%; box-sizing: border-box;
+    padding: 0.7rem 0.9rem; font: inherit; font-size: 0.95rem; color: #122029;
+    background: #fff; border: 1px solid #cbd5e0; border-radius: 8px;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.fui-input:focus, .fui-select:focus { outline: none; border-color: #008DCF; box-shadow: 0 0 0 3px rgba(0, 141, 207, .2); }
+textarea.fui-input { min-height: 120px; resize: vertical; }
+.fui-error .fui-input, .fui-error .fui-select { border-color: #e53e3e; }
+.fui-error-message { color: #e53e3e; font-size: 0.8rem; margin: 0.35rem 0 0; }
+.white-text-form .fui-error-message { color: #ffd2d2; }
+.fui-btn-wrapper { margin-top: 0.5rem; }
+.fui-btn { cursor: pointer; border: 0; }
+.fui-alert { padding: 0.9rem 1rem; border-radius: 8px; margin-bottom: 1.25rem; font-size: 0.95rem; }
+.fui-alert p { margin: 0 0 .5rem; }
+.fui-alert p:last-child { margin-bottom: 0; }
+.fui-alert-success { background: #e6f6ec; color: #1b5e34; border: 1px solid #b7e1c4; }
+.fui-alert-error { background: #fdecec; color: #8a1f1f; border: 1px solid #f5c2c2; }
+.fui-checkbox { display: flex; align-items: center; gap: .5rem; font-size: .9rem; }
+.fui-checkbox-list { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.fui-fieldset { border: 0; padding: 0; margin: 0; }
+
+.leadgen-box .fui-form { margin-top: 0; }
+
+/* Careers application form */
+.apply-form .fui-error-message { margin-top: .35rem; }
+.consent-details { margin: .5rem 0 0 1.75rem; font-size: .85rem; }
+.consent-details summary { cursor: pointer; color: #008DCF; }
+.consent-details .rich-text { margin-top: .5rem; }
+
+/* Video block */
+.video-embed { position: relative; padding-top: 56.25%; }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 12px; }
+
+figure figcaption { font-size: .85rem; opacity: .7; margin-top: .5rem; }
+
+.search-results { margin-bottom: 2.5rem; }

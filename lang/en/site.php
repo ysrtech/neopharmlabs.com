@@ -33,8 +33,6 @@ return [
         'email_placeholder' => 'Email Address',
         'rights' => 'All rights reserved',
         'conditions' => 'General Conditions of Service',
-        'credit' => 'Web Design by',
-        'credit_name' => 'Capp Studio Agency',
     ],
 
     'leadgen' => [

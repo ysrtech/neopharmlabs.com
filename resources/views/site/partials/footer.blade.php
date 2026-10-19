@@ -76,15 +76,6 @@
             <div class="left">
                 <p class="copyright">{{ date('Y') }} &copy; Neopharm Labs . {{ __('site.footer.rights') }} . <a href="{{ page_url('legal') }}">{{ __('site.footer.conditions') }}</a></p>
             </div>
-            <div class="right">
-                <ul>
-                    <li class="designer_credit">
-                        <a href="https://www.capp.studio" target="_blank" rel="noopener"><p>{{ __('site.footer.credit') }} <span class="companyText"><b>{{ __('site.footer.credit_name') }}</b></span></p>
-                            @include('site.svg.capp-logo')
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </footer>

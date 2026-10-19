@@ -8,5 +8,5 @@
     @endforeach
 </table>
 @if (! empty($submission->attachments))
-    <p>Attachments can be downloaded from the CMS: {{ url(config('twill.admin_app_path', 'admin') . '/submissions/' . $submission->id . '/edit') }}</p>
+    <p>Attachments can be downloaded from the CMS: {{ url(config('twill.admin_app_path') . '/submissions/' . $submission->id . '/edit') }}</p>
 @endif

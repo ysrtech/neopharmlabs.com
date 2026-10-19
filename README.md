@@ -4,7 +4,7 @@ Rebuild of www.neopharmlabs.com on [Laravel 12](https://laravel.com) + [Twill 3]
 site was lost. All content was recovered from the Internet Archive (Wayback Machine): the 2024–2026 Craft CMS site in
 English and French, plus the older 2017–2023 pages.
 
-## What's in the CMS (`/admin`)
+## What's in the CMS (`/npoffice`)
 
 | Module | Notes |
 |---|---|

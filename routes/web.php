@@ -57,7 +57,7 @@ foreach (array_reverse(config('site.locales'), true) as $locale => $prefix) {
             Route::get($s('search'), SearchController::class)->name('search');
 
             Route::get('{slug}', [PageController::class, 'show'])
-                ->where('slug', '^(?!' . implode('|', [config('twill.admin_app_path', 'admin'), config('twill.glide.base_path', 'img'), 'storage', 'up']) . ')[^/]+$')
+                ->where('slug', '^(?!' . implode('|', [config('twill.admin_app_path'), config('twill.glide.base_path', 'img'), 'storage', 'up']) . ')[^/]+$')
                 ->name('pages.show');
         });
 }

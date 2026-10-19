@@ -211,7 +211,7 @@ Test it by submitting the contact form at `/contact`.
 
 - `https://www.neopharmlabs.com/`, `/services`, `/blog`, `/fr` all load.
 - An old URL redirects, for example `/stability-services` goes to `/services/stability-testing`.
-- `https://www.neopharmlabs.com/admin` lets you log in with the user from step 6.
+- `https://www.neopharmlabs.com/npoffice` lets you log in with the user from step 6.
 - `https://www.neopharmlabs.com/sitemap.xml` loads. Submit it in Google Search Console, since the hacked site may have left bad URLs indexed.
 - `storage/logs/laravel.log` has no errors.
 
